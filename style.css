@@ -1,0 +1,41 @@
+.gameover {
+  background-color: #fff;
+  border-radius: 8px;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: center;
+  right: center;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gameover p {
+  color: #EB0F36;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+}
+
+.gameover h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
