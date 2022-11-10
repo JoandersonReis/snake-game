@@ -7,6 +7,7 @@ const screenSize = canvas.height
 const snake = new Snake(context, screenSize)
 const apple = new Apple(context, screenSize)
 
+let fps = 10
 
 function game() {
   context.fillStyle = "#262626"
@@ -14,7 +15,6 @@ function game() {
 
   apple.render()
   snake.render()
-
 
   if(snake.eat({
     x: apple.positionX,
@@ -24,4 +24,4 @@ function game() {
   }
 }
 
-setInterval(game, 90)
+setInterval(game, 1000 / fps)
